@@ -1,5 +1,6 @@
 #
 # To build run `docker build --rm -t rpi:pi3 .`
+# To run docker run -it --rm --name pi rpi:pi3
 #
 
 FROM resin/rpi-raspbian
