@@ -19,6 +19,7 @@ RUN apt-get -y upgrade
 
 # BUILD DEPENDENCIES:
 RUN apt -y install iputils-ping
+RUN apt -y install net-tools
 RUN apt -y install wget
 RUN apt -y install make
 RUN apt -y install g++
