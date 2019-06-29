@@ -9,5 +9,5 @@ fi
 if [ $(docker ps -a | grep pi | wc -l) = "1" ]; then
     docker exec -it pi bash
 else
-    docker run -it --rm -v $PWD/Src:/src -v Run:/run --name pi rpi:pi3 bash
+    docker run -it --rm -v $PWD/Src:/src -v $PWD/Run:/run --name pi rpi:pi3 bash
 fi
