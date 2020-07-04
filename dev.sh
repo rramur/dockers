@@ -9,5 +9,5 @@ fi
 if [ $(docker ps -a | grep dev | wc -l) = "1" ]; then
     docker exec -it dev bash
 else
-    docker run -it --rm -v $PWD/Dev-Src:/src --name click ubuntu:dev bash
+    docker run -it --rm -v $PWD/Dev-Src:/src --name dev ubuntu:dev bash
 fi
