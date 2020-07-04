@@ -9,10 +9,6 @@ fi
 if [ $(docker ps -a | grep go | wc -l) = "1" ]; then
     docker exec -it go bash
 else
-#    docker run -it --rm -v $PWD/Go-Src:/src --name go ubuntu:go bash
-    docker run -it --rm --name go ubuntu:go bash
+    docker run -it --rm -v $PWD/Go-Src:/src --name go ubuntu:go bash
 fi
 
-
-# docker commit <container-id> rramur/go-dev:1.13
-# docker push rramur/go-dev:1.13

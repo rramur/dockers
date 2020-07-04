@@ -1,11 +1,10 @@
-FROM rramur/ubuntu-dev:bionic 
+FROM rramur/go-dev:1.13
 
 # Volumes
 # Src Code volume
-# VOLUME [ "/src" ]
+VOLUME [ "/src" ]
 
-RUN wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz
-RUN tar -xvf go1.13.3.linux-amd64.tar.gz
-RUN mv go /usr/local
-RUN export GOROOT=/usr/local/go
+ENV GOROOT=/usr/local/go
+ENV GOPATH=/src
+ENV PATH=$PATH:$GOROOT/bin:$GOPATH
 
