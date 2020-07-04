@@ -15,5 +15,5 @@ Thumbs.db
 *.pcap
 
 #Exclude Directory contents
-Dev-Src/*
-!Dev-Src/.gitkeep 
+Click-Src/*
+!Click-Src/.gitkeep 
