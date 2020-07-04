@@ -1,14 +1,7 @@
-FROM rramur/ubuntu-dev:bionic 
+FROM rramur/click-dev:rel_2_1
 
 # Volumes
 # Src Code volume
-VOLUME [ "/src" ]
+VOLUME [ "/mysrc" ]
 
-RUN mkdir /src
-WORKDIR /src
-RUN git clone https://github.com/kohler/click.git
-WORKDIR /src/click
-RUN ./configure
-RUN make install
-RUN ./userlevel/click ./conf/test.click
 
