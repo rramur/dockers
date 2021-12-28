@@ -9,6 +9,6 @@ if [ $(docker volume ls | grep Dev-Src | wc -l) = "1" ]; then
 fi
 
 # Check the docker image, if it exists delete it
-if [ $(docker images ubuntu:dev | grep dev | wc -l) = "1" ]; then
-    docker rmi -f ubuntu:dev
+if [ $(docker images pi:dev | grep dev | wc -l) = "1" ]; then
+    docker rmi -f pi:dev
 fi
