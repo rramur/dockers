@@ -1,4 +1,4 @@
-FROM rramur/ubuntu-dev:bionic 
+FROM rramur/python_dev:3.6 
 
 # Volumes
 # Src Code volume
