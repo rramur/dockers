@@ -12,6 +12,5 @@ fi
 
 # Clean unused docker volumes
     docker volume prune
-fi
 
 
